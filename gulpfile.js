@@ -1,25 +1,27 @@
-var gulp 				= require('gulp');
-var browserSync	= require('browser-sync').create(); 
-var sass				= require('gulp-sass'); 
+var gulp				= require('gulp');
+var browserSync = require('browser-sync').create();
+var sass 				= require('gulp-sass');
 
+// serve task
 gulp.task('serve', ['sass'], function() {
 
-	browserSync.init({
-		server: {
-			baseDir: "./"
-		}
-	});
+  browserSync.init({
+    server: {
+      baseDir: "./app"
+    }
+  });
 
-	gulp.watch("resources/sass/app.scss", ['sass']);
-	gulp.watch("./*.html").on('change', browserSync.reload);
+  gulp.watch("dist/sass/**/*.scss", ['sass']);
+  gulp.watch("app/*.html").on('change', browserSync.reload);
 
 });
 
+// sass compiler
 gulp.task('sass', function() {
-	return gulp.src("resources/sass/app.scss")
-		.pipe(sass())
-		.pipe(gulp.dest("assets/css"))
-		.pipe(browserSync.stream());
+  return gulp.src("dist/sass/**/*.scss")
+    .pipe(sass())
+    .pipe(gulp.dest("app/css"))
+    .pipe(browserSync.stream());
 });
 
 gulp.task('default', ['serve']);
