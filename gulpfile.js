@@ -1,6 +1,7 @@
 var gulp				  = require('gulp'),
     sass 				  = require('gulp-sass'),
     autoprefixer  = require('gulp-autoprefixer'),
+    flatten       = require('gulp-flatten'),
     browserSync   = require('browser-sync'),
     webpack       = require('webpack-stream');
 
@@ -12,6 +13,13 @@ gulp.task('sass', function() {
     }))
     .pipe(autoprefixer())
     .pipe(gulp.dest("app/css"));
+});
+
+// icon task
+gulp.task('fonts', function () {
+  return gulp.src('./node_modules/**/*.{eot,svg,ttf,woff,woff2}')
+    .pipe(flatten())
+    .pipe(gulp.dest("app/fonts"));
 });
 
 // js compiler
