@@ -1,5 +1,6 @@
 // ini file untuk konfigurasi webpack
 module.exports = {
+	mode: 'production',
 	entry : {
 		app : "./dist/js/app.js"
 	},

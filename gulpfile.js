@@ -30,7 +30,7 @@ gulp.task('js', function(){
 });
 
 // serve task
-gulp.task('serve', ['sass'], function() {
+gulp.task('serve', ['sass', 'fonts', 'js'], function() {
 
   browserSync.init({
     server: {
