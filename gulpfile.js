@@ -38,7 +38,7 @@ gulp.task('serve', ['sass'], function() {
     }
   });
 
-  gulp.watch("dist/sass/**/*.scss", ['sass']);
+  gulp.watch("dist/sass/**/*.scss", ['sass', 'fonts']);
   gulp.watch("dist/js/**/*.js", ['js']);
   gulp.watch("app/css/**/*.css").on('change', browserSync.reload);
   gulp.watch("app/js/**/*.js").on('change', browserSync.reload);
