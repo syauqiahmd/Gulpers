@@ -1,15 +1,25 @@
 var gulp				  = require('gulp'),
     sass 				  = require('gulp-sass'),
     autoprefixer  = require('gulp-autoprefixer'),
+    flatten       = require('gulp-flatten'),
     browserSync   = require('browser-sync'),
     webpack       = require('webpack-stream');
 
 // sass compiler
 gulp.task('sass', function() {
   return gulp.src("dist/sass/**/*.scss")
-    .pipe(sass())
+    .pipe(sass({
+      includePaths: ['node_modules/']
+    }))
     .pipe(autoprefixer())
     .pipe(gulp.dest("app/css"));
+});
+
+// icon task
+gulp.task('fonts', function () {
+  return gulp.src('./node_modules/**/*.{eot,svg,ttf,woff,woff2}')
+    .pipe(flatten())
+    .pipe(gulp.dest("app/fonts"));
 });
 
 // js compiler
@@ -28,7 +38,7 @@ gulp.task('serve', ['sass'], function() {
     }
   });
 
-  gulp.watch("dist/sass/**/*.scss", ['sass']);
+  gulp.watch("dist/sass/**/*.scss", ['sass', 'fonts']);
   gulp.watch("dist/js/**/*.js", ['js']);
   gulp.watch("app/css/**/*.css").on('change', browserSync.reload);
   gulp.watch("app/js/**/*.js").on('change', browserSync.reload);
