@@ -7,7 +7,9 @@ var gulp				  = require('gulp'),
 // sass compiler
 gulp.task('sass', function() {
   return gulp.src("dist/sass/**/*.scss")
-    .pipe(sass())
+    .pipe(sass({
+      includePaths: ['node_modules/']
+    }))
     .pipe(autoprefixer())
     .pipe(gulp.dest("app/css"));
 });
