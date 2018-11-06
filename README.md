@@ -45,8 +45,8 @@ Within the clone  repo you'll find the following directories and files. You'll s
 └── webpack.config.js
 ```
 
-- you can write your sass or scss on `dist/sass/_mentah` and import in `dist/sass/app.scss`
-- you can write your js on `dist/js/_mentah` and import/require in `dist/js/app.js` or you can concate from `node_modules` 
+- you can write your sass or scss on `dist/sass/_src` and import in `dist/sass/app.scss`
+- you can write your js on `dist/js/_src` and import/require in `dist/js/app.js` or you can concate from `node_modules` 
 
 ## How to run
 
