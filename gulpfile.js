@@ -9,6 +9,7 @@ var gulp				  = require('gulp'),
 gulp.task('sass', function() {
   return gulp.src("dist/sass/**/*.scss")
     .pipe(sass({
+      outputStyle: 'compressed',
       includePaths: ['node_modules/']
     }))
     .pipe(autoprefixer())
