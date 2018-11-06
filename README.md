@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://gulpjs.com/img/gulp-white-text.svg" alt="Gulp logo" width=72 >
+    <img src="https://gulpjs.com/img/gulp-white-text.svg" alt="Gulp logo" >
 
   <h3 align="center">Gulper</h3>
 
@@ -9,6 +9,7 @@
   </p>
 </p>
 
+```text
 ├── README.md
 ├── app
 │   ├── css
@@ -33,3 +34,4 @@
 ├── package-lock.json
 ├── package.json
 └── webpack.config.js
+```
