@@ -60,4 +60,4 @@ In this tool included a few dependencies you can find on `package.json` like `bo
 
 ## Notes
 
-Please, don't remove `devDependencies` on `package.json` or any dependencies inside it because it require to run gulp task.
+Please, don't remove `devDependencies` on `package.json` or any dependencies inside it, because it require to run gulp task.
