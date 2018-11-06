@@ -32,11 +32,11 @@ Within the clone  repo you'll find the following directories and files. You'll s
 ├── node_modules
 ├── dist
 │   ├── js
-│   │   ├── _source
+│   │   ├── _src
 │   │   │   └── _testing.js
 │   │   └── app.js
 │   └── sass
-│       ├── _source
+│       ├── _src
 │       │   └── _testing.scss
 │       └── app.scss
 ├── gulpfile.js
@@ -53,3 +53,11 @@ Within the clone  repo you'll find the following directories and files. You'll s
 - default task for serve and compile all resource `gulp` or `gulp serve`
 - compile sass from resource to css on app using `gulp sass`
 - compile js from resource to js on app using `gulp js` or `webpack -d`
+
+## Oppositional Options
+
+In this tool included a few dependencies you can find on `package.json` like `bootstrap, font-awesome, jquery, popper.js, simple-line-icons` you can remove them and you can use your own preference dependencies. 
+
+## Notes
+
+Please, don't remove `devDependencies` on `package.json` or any dependencies inside it because it require to run gulp task.
