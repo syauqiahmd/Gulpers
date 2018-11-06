@@ -32,11 +32,11 @@ Within the clone  repo you'll find the following directories and files. You'll s
 ├── node_modules
 ├── dist
 │   ├── js
-│   │   ├── _mentah
+│   │   ├── _source
 │   │   │   └── _testing.js
 │   │   └── app.js
 │   └── sass
-│       ├── _mentah
+│       ├── _source
 │       │   └── _testing.scss
 │       └── app.scss
 ├── gulpfile.js
