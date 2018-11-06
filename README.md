@@ -1,7 +1,5 @@
 <p align="center">
-    ![Gulp Logo] (app/img/gulp-1-logo-svg-vector.png)
-  <h3 align="center">Gulper</h3>
-
+  <h2 align="center">Gulper</h2>
   <p align="center">
     Powerful front-end tool for faster and easier web development.
     <hr>
