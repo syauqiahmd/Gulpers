@@ -1,5 +1,5 @@
 <p align="center">
-    ![Gulp Logo] (https://github.com/syauqiahmd/Gulpers/blob/config/compressed-source/app/img/gulp-1-logo-svg-vector.svg)
+    ![Gulp Logo] (app/img/gulp-1-logo-svg-vector.png)
   <h3 align="center">Gulper</h3>
 
   <p align="center">
