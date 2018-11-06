@@ -12,8 +12,7 @@ Several quick start, step by step:
 
 - Clone the repo: `git clone https://github.com/syauqiahmd/Gulpers.git`
 - Install base dependencies via [npm](https://www.npmjs.com/): `npm install`
-- This task need gulp and webpack-cli globally, so please make sure you have install both of that.
--- `npm install gulp webpack-cli -g`
+- This task need gulp and webpack-cli globally, so please make sure you have install both of that with : `npm install gulp webpack-cli -g`
 
 ## What's included
 
