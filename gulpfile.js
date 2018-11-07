@@ -23,6 +23,7 @@ gulp.task('sass', function() {
 // icon task
 gulp.task('fonts', function() {
   return gulp.src('./node_modules/**/*.{eot,svg,ttf,woff,woff2}')
+  .pipe(flatten())
   .pipe(gulp.dest("app/fonts"));
 });
 
@@ -54,7 +55,7 @@ gulp.task('dev', function() {
   gulp.start(['sass', 'fonts', 'js'])
 });
 
-//prod tas
+//prod taks
 gulp.task('prod', function(){
   buildType = 'prod'
   gulp.start(['sass', 'fonts', 'js'])
