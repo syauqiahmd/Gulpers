@@ -15,7 +15,10 @@
     "template",
     "config"
   ],
-  "author": "syauqiahmd",
+  "author": [
+    "syauqiahmd",
+    "FaruqRahmadani"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/syauqiahmd/Gulpers/issues"
